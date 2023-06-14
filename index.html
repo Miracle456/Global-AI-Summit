@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golbal Ai Summit</title>
+    <style>
+        .green-box{
+            background-color: green;
+            height: 50px;
+            font-size: 20px;
+            color: white;
+        }
+        body{
+            background-color: rgb(228, 228, 255);
+        }
+        .red-box{
+            background-color: red;
+            height: auto;
+            font-size: 20px;
+            color: white;
+        }
+       .outer-box{
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: none;
+       }
+       .send{
+           background-color: red;
+           color: white;
+           padding: 10px;
+           cursor: pointer;
+       }
+
+       .close{
+           background-color: green;
+           color: white;
+           padding: 10px;
+           cursor: pointer;
+       }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-box{
+            background-color: white;
+            padding: 60px;
+        }
+        @media only screen and (max-width:390px) {
+            .outer-box{
+            height: auto;
+            width: fit-content;
+            display: flex;
+            flex-direction: column !important;
+            justify-content: space-between;
+            background-color: none;
+       }
+       img{
+           width: 380px;
+       }
+        }
+    </style>
+</head>
+<body>
+    <div class="green-box">
+<p>AI Summit: Chat Window</p>
+    </div>
+    <br>
+    <div class="red-box">
+<p><b>Welcome to AI Summit Portal</b>
+    <br>
+    <br>
+    Click on the button at the bottom of this page to open the chat form. Note that the button
+    and the form is fixed - they will always be positioned to the bottom of the browser
+    window.</p>
+    </div>
+    <div class="outer-box">
+        <div class="left-box">
+            <img src="https://newsonair.com/wp-content/uploads/2022/09/FcZluO4XEAMRvBT-696x453.jpg" alt="">
+        </div>
+        <div class="right-box">
+            <h1>Chat</h1>
+            <h3>message</h3>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Type message..."></textarea>
+            <div class="wrap">
+            <br>
+            <input type="submit"value="Send"class="send"pl>
+            <br>
+            <input type="submit"value="Close"class="close"pl>
+        </div>
+    </div>
+
+
+</body>
+</html>
